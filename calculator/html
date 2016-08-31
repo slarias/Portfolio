@@ -1,0 +1,49 @@
+<!-- was created by Spencer Arias. All Rights reserved -->
+
+<!--- VERSION 0.6 8/30/16, fixed a bug where the calculator could not handle more than 12 digits without overflowing. Added the overflow feature and then added the webkit-scrollbar feature to fix this issue. you can no longer have 2 decimals. in the process of fixing a bug that doesn't let you put a decimal immediately after an operator ie. 5.5 * .5 will return Err.  Also looking for a way to make it so the C key removes the last entry but not the whole memory ---->
+
+<!--- VERSION 0.5 8/30/16, Initial Calculator using primarily jQuery ---->
+
+
+<body>
+  <div id="calculator">
+    <div class="title"><span id="name">Calculator</span></div> <!-- title -->
+    <div id="solution">
+      <span id="answer"></span>
+    </div> <!-- solution box -->
+    
+  
+    <!-- row 1 -->
+    <button class="button1 clear" id="ac">AC</button>
+    <button class="button1 clear" id="c">C</button>
+    <button class="button1 number" id="divide">÷</button>
+    <button class="button1 number" id="multiply">x</button>
+    
+    <!-- row 2 --> 
+    <button class="button1 number" id="seven" value="7">7</button>
+    <button class="button1 number" id="eight" value="8">8</button>
+    <button class="button1 number" id="nine" value="9">9</button>
+    <button class="button1 number" id="subtract">-</button>
+    
+    <!-- row 3 --> 
+    
+    <button class="button1 number" id="four" value="4">4</button>
+    <button class="button1 number" id="five" value="5">5</button>
+    <button class="button1 number" id="six" value="6">6</button>
+    <button class="button1 number" id="plus">+</button>
+    
+    <!-- row 4 -->
+    
+    <button class="row4 button1 number" id="one" value="1">1</button>
+    <button class="row4 button1 number" id="two" value="2">2</button>
+    <button class="row4 button1 number" id="three" value="3">3</button>
+    <button class="button2 number" id="equals">=</button>
+    
+    <!-- row 5 -->
+    <button class="row5 button3 number" id="zero">0</button>
+    <button class="row5 button1 number" id="decimal">.</button>
+    
+  </div>
+  
+  <div id="copyright">Designed and Coded by <a href="https://codepen.io/slarias/pen/YWBQdL">Spencer Arias</a></div>
+</body>
